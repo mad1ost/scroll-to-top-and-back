@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Scroll to top and back",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scroll to the top of the page by clicking on the icon and scroll to the previous position by clicking again",
   "background": {
     "scripts": [
