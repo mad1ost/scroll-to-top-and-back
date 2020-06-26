@@ -1,15 +1,20 @@
 {
   "manifest_version": 2,
   "name": "Scroll to top and back",
-  "version": "1.0.1",
-  "description": "Scroll to the top of the page by clicking on the icon and scroll to the previous position by clicking again",
+  "version": "1.0.2",
+  "description": "Scroll to the top of the page by clicking on the browser action icon and scroll to the previous position by clicking on it again",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png"
+  },
   "background": {
     "scripts": [
       "background.js"
     ]
   },
   "browser_action": {
-    "default_icon": "icons/scroll2top.svg",
+    "default_icon": "icons/icon.svg",
     "default_title": "Scroll to top and back"
   },
   "permissions": [
