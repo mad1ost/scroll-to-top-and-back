@@ -18,9 +18,13 @@ const code = `
   }());
 `;
 
-browser.browserAction.onClicked.addListener((tab) => {
+function onClicked() {
   browser.tabs.executeScript({
     code: code,
     runAt: 'document_end'
   });
-});
+}
+
+browser.pageAction.onClicked.addListener(onClicked);
+
+browser.browserAction.onClicked.addListener(onClicked);
