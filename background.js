@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const code = `
   !(function() {
@@ -21,7 +21,7 @@ const code = `
 function onClicked() {
   browser.tabs.executeScript({
     code: code,
-    runAt: 'document_end'
+    runAt: "document_end"
   });
 }
 
