@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Scroll to top and back",
-  "version": "1.2.0",
-  "description": "Scroll to the top of the page by clicking on the browser action icon (or page action icon) and scroll to the previous position by clicking on it again",
+  "name": "__MSG_extension_name__",
+  "version": "1.3.0",
+  "description": "__MSG_extension_description__",
   "icons": {
     "32": "icons/icon-32.png",
     "64": "icons/icon-64.png",
@@ -15,14 +15,15 @@
   },
   "page_action": {
     "default_icon": "icons/icon.svg",
-    "default_title": "Scroll to top and back",
+    "default_title": "__MSG_default_title__",
     "show_matches": ["<all_urls>"]
   },
   "browser_action": {
     "default_icon": "icons/icon.svg",
-    "default_title": "Scroll to top and back"
+    "default_title": "__MSG_default_title__"
   },
   "permissions": [
     "activeTab"
-  ]
+  ],
+  "default_locale": "en"
 }
