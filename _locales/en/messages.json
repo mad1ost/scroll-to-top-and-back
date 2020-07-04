@@ -1,0 +1,11 @@
+{
+  "extension_name": {
+    "message": "Scroll to top and back"
+  },
+  "extension_description": {
+    "message": "Scroll to the top of the page by clicking on the browser action icon (or page action icon) and scroll to the previous position by clicking on it again"
+  },
+  "default_title": {
+    "message": "Scroll to top and back"
+  }
+}
