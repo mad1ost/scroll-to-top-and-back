@@ -1,7 +1,7 @@
 # Scroll to top and back
 
-![Screenshot](https://addons.cdn.mozilla.net/user-media/previews/full/240/240698.png)
-![Screenshot](https://addons.cdn.mozilla.net/user-media/previews/full/240/240699.png)
+![Screenshot](https://addons.mozilla.org/user-media/previews/full/240/240698.png)
+![Screenshot](https://addons.mozilla.org/user-media/previews/full/240/240699.png)
 
 Firefox extension that scrolls to the top of the page by clicking on the browser action icon (or page action icon) and scroll to the previous position by clicking on it again.
 
