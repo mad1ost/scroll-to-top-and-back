@@ -1,36 +1,36 @@
 {
-  "manifest_version": 2,
-  "name": "__MSG_extension_name__",
-  "description": "__MSG_extension_description__",
-  "version": "1.5.1",
-  "default_locale": "en",
-  "homepage_url": "https://github.com/mad1ost/scroll-to-top-and-back",
-  "icons": {
-    "32": "icons/icon.svg",
-    "64": "icons/icon.svg",
-    "128": "icons/icon.svg"
-  },
-  "background": {
-    "scripts": ["background.js"]
-  },
-  "content_scripts": [
-    {
-      "js": ["youtube.js"],
-      "matches": ["https://www.youtube.com/*"],
-      "run_at": "document_end",
-      "all_frames": false
-    }
-  ],
-  "page_action": {
-    "default_icon": "icons/icon.svg",
-    "default_title": "__MSG_default_title__",
-    "show_matches": ["<all_urls>"]
-  },
-  "browser_action": {
-    "default_icon": "icons/icon.svg",
-    "default_title": "__MSG_default_title__"
-  },
-  "permissions": [
-    "activeTab"
-  ]
+	"manifest_version": 2,
+	"name": "__MSG_extension_name__",
+	"description": "__MSG_extension_description__",
+	"version": "1.5.1",
+	"default_locale": "en",
+	"homepage_url": "https://github.com/mad1ost/scroll-to-top-and-back",
+	"icons": {
+		"32": "icons/icon.svg",
+		"64": "icons/icon.svg",
+		"128": "icons/icon.svg"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"content_scripts": [
+		{
+			"js": ["youtube.js"],
+			"matches": ["https://www.youtube.com/*"],
+			"run_at": "document_end",
+			"all_frames": false
+		}
+	],
+	"page_action": {
+		"default_icon": "icons/icon.svg",
+		"default_title": "__MSG_default_title__",
+		"show_matches": ["<all_urls>"]
+	},
+	"browser_action": {
+		"default_icon": "icons/icon.svg",
+		"default_title": "__MSG_default_title__"
+	},
+	"permissions": [
+		"activeTab"
+	]
 }
