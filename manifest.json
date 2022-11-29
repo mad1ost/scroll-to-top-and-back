@@ -13,14 +13,6 @@
 	"background": {
 		"scripts": ["background.js"]
 	},
-	"content_scripts": [
-		{
-			"js": ["youtube.js"],
-			"matches": ["https://www.youtube.com/*"],
-			"run_at": "document_end",
-			"all_frames": false
-		}
-	],
 	"page_action": {
 		"default_icon": "icons/icon.svg",
 		"default_title": "__MSG_default_title__",
