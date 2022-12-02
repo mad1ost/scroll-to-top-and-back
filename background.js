@@ -31,6 +31,9 @@ function onClicked(tab) {
 	browser.tabs.executeScript({
 		code: code,
 		runAt: 'document_end'
+	})
+	.catch((error) => {
+		console.error(error);
 	});
 }
 
