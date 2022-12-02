@@ -9,28 +9,31 @@ function handleMessage(position, sender) {
 	}
 }
 
-function onClicked(tab) {
-	let code = `!(function() {
-		let savedY = ${(tab.id in positions) ? positions[tab.id] : 'window.savedY'};
-		let newY;
-		if (window.scrollY === 0) {
-			if (!savedY) return;
-			newY = savedY;
-		} else {
-			savedY = window.scrollY;
-			newY = 0;
-		}
-		window.scrollTo({
-			top: newY
-		});
-		window.savedY = savedY;
-	}());
-	`;
-	delete positions[tab.id];
+function scrollTo(position) {
+	let savedY = (position) ? position : window.savedY;
+	let newY;
+	if (window.scrollY === 0) {
+		if (!savedY) return;
+		newY = savedY;
+	} else {
+		savedY = window.scrollY;
+		newY = 0;
+	}
+	window.scrollTo({
+		top: newY
+	});
+	window.savedY = savedY;
+}
 
-	browser.tabs.executeScript({
-		code: code,
-		runAt: 'document_end'
+function onClicked(tab) {
+	const position = (tab.id in positions) ? positions[tab.id] : 0;
+	browser.scripting.executeScript({
+		target: {
+			tabId: tab.id
+		},
+		func: scrollTo,
+		args: [position],
+		injectImmediately: true
 	})
 	.catch((error) => {
 		console.error(error);

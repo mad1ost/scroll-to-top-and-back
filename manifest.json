@@ -2,12 +2,13 @@
 	"manifest_version": 2,
 	"name": "__MSG_extension_name__",
 	"description": "__MSG_extension_description__",
-	"version": "1.6.1",
+	"version": "1.7.0",
 	"default_locale": "en",
 	"homepage_url": "https://github.com/mad1ost/scroll-to-top-and-back",
 	"browser_specific_settings": {
 		"gecko": {
-			"id": "{5c2dbcaa-cb52-4678-a361-14d7f7b569a6}"
+			"id": "{5c2dbcaa-cb52-4678-a361-14d7f7b569a6}",
+			"strict_min_version": "101.0"
 		}
 	},
 	"icons": {
@@ -28,6 +29,7 @@
 		"default_title": "__MSG_default_title__"
 	},
 	"permissions": [
+		"scripting",
 		"activeTab"
 	]
 }
