@@ -41,5 +41,5 @@ function onClicked(tab) {
 }
 
 browser.pageAction.onClicked.addListener(onClicked);
-browser.browserAction.onClicked.addListener(onClicked);
+browser.action.onClicked.addListener(onClicked);
 browser.runtime.onMessageExternal.addListener(handleMessage);
