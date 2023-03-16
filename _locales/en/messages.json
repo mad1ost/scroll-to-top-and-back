@@ -7,5 +7,8 @@
   },
   "default_title": {
     "message": "Scroll to top and back"
+  },
+  "command_description": {
+    "message": "Scroll to top and back"
   }
 }
